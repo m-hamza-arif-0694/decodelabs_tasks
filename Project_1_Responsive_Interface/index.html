@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs Project 1 - Responsive Interface</title>
+    <!-- Fonts: Montserrat for Headings, Roboto for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">DecodeLabs</div>
+        <button class="mobile-menu-toggle" aria-label="Toggle Sidebar Navigation" aria-expanded="false" aria-controls="sidebar-navigation">
+            <svg class="icon-24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <nav class="site-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home" class="nav-link active"><span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></span>Home</a></li>
+                <li><a href="#about" class="nav-link"><span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>About</a></li>
+                <li><a href="#services" class="nav-link"><span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></span>Services</a></li>
+                <li><a href="#contact" class="nav-link"><span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>Contact</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button">Get Started</button>
+    </header>
+            
+    <div class="layout-wrapper">
+        <aside class="sidebar" id="sidebar-navigation">
+            <nav class="sidebar-nav" aria-label="Sidebar Navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#dashboard" class="sidebar-link active"><span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg></span>Dashboard</a></li>
+                    <li><a href="#projects" class="sidebar-link"><span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></span>Projects</a></li>
+                    <li><a href="#settings" class="sidebar-link"><span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06-.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l-.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06-.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></span>Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <article class="hero-section">
+                <h1>Build the Future</h1>
+                <p>A strategic execution framework for Full-Stack Interns. Design is an iterative process that blends precision with empathy.</p>
+                <button class="cta-button">Learn More</button>
+            </article>
+
+            <section class="content-grid" aria-label="Featured Projects">
+                <article class="card">
+                    <div class="card-image placeholder" role="img" aria-label="Abstract illustration of architecture"></div>
+                    <div class="card-content">
+                        <h2>Responsive Architecture</h2>
+                        <p>Mastering fluid layouts and flexible grid systems that adapt seamlessly across devices, embodying the mobile-first development philosophy.</p>
+                        <button class="card-action-btn" aria-label="Bookmark Responsive Architecture" data-count="12">
+                            <span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></span>
+                            <span class="btn-text">Bookmark (<span class="count">12</span>)</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image placeholder" role="img" aria-label="Abstract illustration of digital craft"></div>
+                    <div class="card-content">
+                        <h2>2025 UI/UX Compliance</h2>
+                        <p>Crafting warm, grounded digital experiences using curated color palettes, semantic HTML landmarks, and accessible typography pairings.</p>
+                        <button class="card-action-btn" aria-label="Bookmark 2025 UI/UX Compliance" data-count="24">
+                            <span class="icon-placeholder" aria-hidden="true"><svg class="icon-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></span>
+                            <span class="btn-text">Bookmark (<span class="count">24</span>)</span>
+                        </button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 DecodeLabs Internship Program. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
