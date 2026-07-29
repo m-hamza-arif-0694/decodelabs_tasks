@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs Project 4 - Integrated Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">DecodeLabs</div>
+        <button class="mobile-menu-toggle" aria-label="Toggle Sidebar Navigation" aria-expanded="false"
+            aria-controls="sidebar-navigation">
+            <svg class="icon-24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <!-- Site Header Navigation -->
+        <nav class="site-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#users-sec" class="nav-link">User Records</a></li>
+                <li><a href="#register-sec" class="nav-link">Register</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button" id="refresh-btn">Fetch Data</button>
+    </header>
+
+    <div class="layout-wrapper">
+        <aside class="sidebar" id="sidebar-navigation">
+            <nav class="sidebar-nav" aria-label="Sidebar Navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#hero" class="sidebar-link active">Dashboard</a></li>
+                    <li><a href="#users-sec" class="sidebar-link">SQLite DB Users</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <article class="hero-section" id="hero">
+                <h1>Full-Stack Integration Milestone</h1>
+                <p>Bridging the gap between UI design, Express REST APIs, and SQLite Database Vaults.</p>
+            </article>
+
+            <!-- Error Notification Banner -->
+            <div id="error-banner" class="error-banner hidden" role="alert"></div>
+
+            <!-- User Registration Form (Sends data to SQLite via REST API) -->
+            <section class="form-section" id="register-sec">
+                <h2>Register New User into SQLite Vault</h2>
+                <form id="user-form">
+                    <div class="form-group">
+                        <label for="user-name">Full Name</label>
+                        <input type="text" id="user-name" required placeholder="e.g. Alice Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" required placeholder="e.g. alice@decodelabs.tech">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-age">Age (Must be >= 18)</label>
+                        <input type="number" id="user-age" required min="18" placeholder="e.g. 24">
+                    </div>
+                    <button type="submit" class="cta-button">Save to Database</button>
+                </form>
+            </section>
+
+            <!-- Loading Spinner -->
+            <div id="loading-spinner" class="spinner-container hidden">
+                <div class="spinner"></div>
+                <span>Fetching live records...</span>
+            </div>
+
+            <!-- Dynamic SQLite User Cards Grid -->
+            <section id="users-sec">
+                <h2>Registered Users Database</h2>
+                <div class="content-grid" id="users-grid">
+                    <!-- Injected dynamically via app.js -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 DecodeLabs Internship Program. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

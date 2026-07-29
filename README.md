@@ -11,6 +11,7 @@ This repository (`decodelabs_tasks`) contains completed projects and tasks submi
 | 1 | [Project 1: Responsive Frontend Interface](./Project_1_Responsive_Interface) | ✅ Completed | HTML5 Semantics, CSS3 Grid/Flexbox/Container Queries, 2025 Aesthetics, Vanilla JS State Management |
 | 2 | [Project 2: Backend API Development](./Project_2) | ✅ Completed | Node.js, Express, RESTful Routing, Syntactic Validation, HTTP Status Codes |
 | 3 | [Project 3: Database Integration](./Project_3_Database_Integration) | ✅ Completed | SQLite, Parameterized Queries, Schema Design, SQL Constraints |
+| 4 | [Project 4: Full-Stack Integration](./Project_4) | ✅ Completed | Express REST API, SQLite Integration, Vanilla JS Frontend, CORS, Async/Await Fetch, XSS Prevention |
 
 ---
 ## 🛠️ Project Details
@@ -44,6 +45,14 @@ This repository (`decodelabs_tasks`) contains completed projects and tasks submi
 
 ---
 
+### [Project 4: Full-Stack Integration](./Project_4)
+- **Goal**: Seamlessly bridge frontend UI design with Express REST APIs and a persistent SQLite database vault to form a complete end-to-end full-stack system.
+- **Key Features**:
+  - **End-to-End Integration**: Full integration connecting HTML5/CSS3 frontend, client-side async `fetch` API, Express RESTful endpoints, and SQLite backend storage.
+  - **CORS Handling**: Configured cross-origin resource sharing (`cors` middleware) enabling seamless communication between frontend and backend servers.
+  - **User Registration & Live Grid**: Interactive form serializing JSON payloads to create user records, combined with real-time UI grid updates upon database changes.
+  - **XSS & Security Safeguards**: Safe DOM element insertion (`textContent` over `innerHTML`), server-side validation gatekeepers, and SQL injection prevention using parameterized queries (`?`).
+  - **Dynamic Navigation & State Observer**: Smooth scroll navigation across sections (`Home`, `Register`, `User Records`), auto-synchronizing active blue highlights using `IntersectionObserver` (ScrollSpy).
 
 ---
 
