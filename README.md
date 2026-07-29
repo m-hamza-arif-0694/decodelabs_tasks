@@ -10,19 +10,9 @@ This repository (`decodelabs_tasks`) contains completed projects and tasks submi
 |---|---|---|---|
 | 1 | [Project 1: Responsive Frontend Interface](./Project_1_Responsive_Interface) | ✅ Completed | HTML5 Semantics, CSS3 Grid/Flexbox/Container Queries, 2025 Aesthetics, Vanilla JS State Management |
 | 2 | [Project 2: Backend API Development](./Project_2) | ✅ Completed | Node.js, Express, RESTful Routing, Syntactic Validation, HTTP Status Codes |
+| 3 | [Project 3: Database Integration](./Project_3_Database_Integration) | ✅ Completed | SQLite, Parameterized Queries, Schema Design, SQL Constraints |
 
 ---
-
-### [Project 2: Backend API Development](./Project_2)
-- **Goal**: Develop a robust backend API ("The Nervous System") to handle application logic, routing, and data validation.
-- **Key Features**:
-  - **RESTful Endpoints**: Adheres to correct noun-based naming conventions (`GET /api/projects`, `POST /api/submissions`).
-  - **The Gatekeeper Rule**: Implements syntactic and semantic validation for incoming JSON data, enforcing "Never Trust the Client".
-  - **Accurate Server Tone**: Uses precise HTTP status codes (`200 OK`, `201 Created`, `400 Bad Request`, `404 Not Found`, `500 Internal Error`).
-  - **Error Resilience**: Includes a global error handler and a catch-all 404 route for invalid paths.
-
----
-
 ## 🛠️ Project Details
 
 ### [Project 1: Responsive Frontend Interface](./Project_1_Responsive_Interface)
@@ -34,6 +24,26 @@ This repository (`decodelabs_tasks`) contains completed projects and tasks submi
   - **CSS Container Queries**: Dynamic card component layouts based on inline container dimensions.
   - **Universal Access & WCAG Compliance**: Distinct `aria-label`s, semantic landmarks (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`), 24px icon placeholders, and visible keyboard focus outlines.
   - **Interactive State Management**: Vanilla JS handling mobile menu drawer toggle, active navigation link states, and interactive card bookmark counters.
+
+### [Project 2: Backend API Development](./Project_2)
+- **Goal**: Develop a robust backend API ("The Nervous System") to handle application logic, routing, and data validation.
+- **Key Features**:
+  - **RESTful Endpoints**: Adheres to correct noun-based naming conventions (`GET /api/projects`, `POST /api/submissions`).
+  - **The Gatekeeper Rule**: Implements syntactic and semantic validation for incoming JSON data, enforcing "Never Trust the Client".
+  - **Accurate Server Tone**: Uses precise HTTP status codes (`200 OK`, `201 Created`, `400 Bad Request`, `404 Not Found`, `500 Internal Error`).
+  - **Error Resilience**: Includes a global error handler and a catch-all 404 route for invalid paths.
+
+---
+
+### [Project 3: Database Integration](./Project_3_Database_Integration)
+- **Goal**: Connect the backend with a permanent database to handle State Persistence and CRUD operations.
+- **Key Features**:
+  - **Relational Schema**: Enforces architectural integrity with `UNIQUE`, `NOT NULL`, and `CHECK` constraints on the database level.
+  - **SQL Injection Prevention**: All endpoints use strictly **Parameterized Queries** to separate data from executable logic.
+  - **CRUD Web Mapping**: Maps HTTP methods directly to SQL commands (`POST` -> `INSERT`, `GET` -> `SELECT`, `PUT` -> `UPDATE`, `DELETE` -> `DELETE`).
+
+---
+
 
 ---
 
